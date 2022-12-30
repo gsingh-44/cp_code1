@@ -172,7 +172,10 @@ for count in range(len(inf)):
         ws.cell(count+2, 7).value = str("Found outside the range")     
 
     if found_in_ln == ex_in_lane:
-
+        for i in range(1, 7):
+            ws.cell(count+2, i).fill = fill_green
+            if found_in_ln == 1:
+                ws.cell(count+2, i).value = str("Destination TILSONRBURG")
 
     if ex_in_lane ==1:
          
